@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 30px;
+}
+
+.h1 {
+  font-size: 2.5rem;
+  margin-top: 80px; /* Tomé la versión más grande que seguramente preferías */
+}
+
+.top-line {
+  background-color: #98c97f; 
+  height: 38px;              
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 4px;
+  left: 4px;
+  background-color: #98c97f;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.menu-toggle img {
+  width: 18px;
+  height: 18px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0px;
+  top: 35px;
+  background-color: #98c97f;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.menu button  {
+  background: none;
+  border: none;
+  text-align: left;
+  margin: 4px 0;
+  border-bottom: 1px solid black;
+  color: black;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.subtitulo {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.btn-central {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+.btn-central a,
+.btn-central button {
+  background-color: #9AC56F;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.btn-central a:hover,
+.btn-central button:hover {
+  background-color: #75A33C;
+}
+
+.contenedor-tabla {
+  background: white;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 25px;
+  text-align: center;
+}
+
+th {
+  background-color: #9AC56F;
+  color: black;
+}
+
+input, select {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.boton-eliminar,
+.boton-add {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: none;
+}
+
+.boton-eliminar img,
+.boton-add img {
+  width: 30px;
+  height: 30px;
+}
