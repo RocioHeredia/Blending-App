@@ -1,115 +1,284 @@
 <!DOCTYPE html>
-<html lang="es" x-data="{ vista: 'inicio' }">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NutriMix Optimizer</title>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  <link rel="stylesheet" href="css/style1.css">
-</head>
-<body>
+  <link rel="stylesheet" href="css/style1.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-  <div class="top-line"></div>
+</head>
+<body x-data="app">
+
+  <!-- <div class="top-line"></div> -->
 
   <div class="header">
-    <div x-data="{ abierto: false }">
-      <button class="menu-toggle" @click="abierto = !abierto">
-        <img src="img/menu.png" alt="icono menú">
-        <span>Menú</span>
-      </button>
-      <div x-show="abierto" class="menu">
-        <button @click="vista = 'inicio'; abierto = false">Inicio</button>
-        <button @click="vista = 'optimizador'; abierto = false">Optimizador</button>
-        <button @click="vista = 'resultados'; abierto = false">Resultados</button>
-        <button @click="vista = 'ajustes'; abierto = false">Ajustes</button>
+    <nav class="navbar ">
+      <div class="container-fluid">
+        <div x-data="{ abierto: false }">
+          <button class=" btn menu-toggle" @click="abierto = !abierto">
+            <!-- <img src="./img/menu.png" alt="icono menu" height="24" class="d-inline-block align-text-top"> -->
+            <i class="fi fi-br-menu-burger icono"></i>
+            <span style="color:white;">Menú</span>
+          </button>
+          <div x-show="abierto" class="menu">
+            <button @click="vista = 'inicio'; abierto = false">Inicio</button>
+            <button @click="vista = 'optimizador'; abierto = false" href=>Optimizador</button>
+            <button @click="vista = 'resultados'; abierto = false">Resultados</button>
+            <button @click="vista = 'ajustes'; abierto = false">Ajustes</button>
+            <button @click="vista = 'ejecuciones'; abierto = false">Ejecuciones Anteriores</button>
+          </div>
+        </div>
       </div>
-    </div>
-    <h1 class="h1">NutriMix Optimizer</h1>
+    </nav>
+      <!-- <div x-data="{ abierto: false }" >
+        <button class="menu-toggle" @click="abierto = !abierto">
+          <img src="img/menu.png" alt="icono menú" />
+          <span>Menú</span>
+        </button>
+        <div x-show="abierto" class="menu">
+          <button @click="vista = 'inicio'; abierto = false">Inicio</button>
+          <button @click="vista = 'optimizador'; abierto = false">Optimizador</button>
+          <button @click="vista = 'resultados'; abierto = false">Resultados</button>
+          <button @click="vista = 'ajustes'; abierto = false">Ajustes</button>
+        </div>
+      </div> -->
+    <!-- <h1 class="h1">NutriMix Optimizer</h1> -->
   </div>
 
   <!-- VISTA INICIO -->
-  <div x-show="vista === 'inicio'" x-transition>
-    <p class="subtitulo">Optimiza tus materias primas. Maximiza tu rentabilidad.</p>
-    <div class="btn-central">
-      <button @click="vista = 'optimizador'">Ir a Optimizador</button>
+  <div x-show="vista === 'inicio'" x-transition class="backg">
+    <div class="contenedor">
+      <h1 class="h1">NutriMix Optimizer</h1>
+      <p class="subtitulo">Optimiza tus materias primas. Maximiza tu rentabilidad.</p>
+      <div class="btn-central">
+        <button @click="vista = 'optimizador'">Ir a Optimizador</button>
+      </div>
     </div>
   </div>
 
   <!-- VISTA OPTIMIZADOR -->
-  <div x-show="vista === 'optimizador'" class="contenedor-tabla" x-data="{
-      materias: [
-        { nombre: '', dureza: '', tipo: 'vegetal' }
-      ],
-      agregarFila() {
-        this.materias.push({ nombre: '', dureza: '', tipo: 'vegetal' });
-      },
-      eliminarFila(index) {
-        this.materias.splice(index, 1);
-      }
-    }" x-transition>
-    <table>
-      <thead>
-        <tr>
-          <th>Materia</th>
-          <th>Dureza</th>
-          <th>Tipo</th>
-        </tr>
-      </thead>
-      <tbody>
-        <template x-for="(fila, index) in materias" :key="index">
-          <tr>
-            <td><input type="text" x-model="fila.nombre"></td>
-            <td><input type="number" step="0.01" x-model="fila.dureza"></td>
-            <td>
-              <select x-model="fila.tipo">
-                <option value="vegetal">Vegetal</option>
-                <option value="aceitoso">Aceitoso</option>
-              </select>
-            </td>
-            <td>
-              <button class="boton-eliminar" @click="eliminarFila(index)">
-                <img src="img/delete.png" alt="icono eliminar">
-              </button>
-            </td>
-          </tr>
-        </template>
-      </tbody>
-    </table>
-    <button class="boton-add" @click="agregarFila()">
-      <img src="img/add.png" alt="icono agregar">
-    </button>
-    <h3 style="margin-top: 30px;">Costos por materia (6 meses)</h3>
+  <div x-show="vista === 'optimizador'"  x-transition>
+    <div class="backg">
+      <div class="contenedor-tabla">
+        <table>
+          <thead>
+            <tr>
+              <th>Materia</th>
+              <th>Dureza</th>
+              <th>Tipo</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <template x-for="(fila, index) in materias" :key="index">
+              <tr>
+                <td><input type="text" x-model="fila.nombre" /></td>
+                <td><input type="number" step="0.01" x-model="fila.dureza" /></td>
+                <td>
+                  <select x-model="fila.tipo">
+                    <option value="Vegetal">Vegetal</option>
+                    <option value="Aceitoso">Aceitoso</option>
+                  </select>
+                </td>
+                <td>
+                  <button class="boton-eliminar" @click="eliminarFila(index)">
+                    <!-- <img src="img/delete.png" alt="icono eliminar" /> -->
+                    <i class="fi fi-br-trash icono"></i>
+                  </button>
+                </td>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+        <button class="boton-add" @click="agregarFila()">
+          <!-- <img src="img/add.png" alt="icono agregar" /> -->
+          <i class="fi fi-br-add icono ml-5"></i>
+        </button>
 
-    <template x-for="m in materias" :key="'costos_' + m.nombre">
-      <div style="margin-bottom: 15px;">
-        <strong x-text="m.nombre"></strong>:
-        <template x-for="mes in [1,2,3,4,5,6]" :key="m.nombre + '-' + mes">
-          <input 
-            type="number" 
-            min="0" 
-            class="mes-input" 
-            :placeholder="'Mes ' + mes" 
-            x-model.number="costos[`${m.nombre}_${mes}`]" 
-            style="width: 80px; margin: 5px;"
-          />
+        <h3 style="margin-top: 30px;">Costos por materia (6 meses)</h3>
+
+        <template x-for="m in materias" :key="'costos_' + m.nombre">
+          <div style="margin-bottom: 15px;">
+            <strong x-text="m.nombre"></strong>:
+            <template x-for="mes in [1,2,3,4,5,6]" :key="m.nombre + '-' + mes">
+              <input
+                type="number"
+                min="0"
+                class="mes-input"
+                :placeholder="'Mes ' + mes"
+                x-model.number="costos[`${m.nombre}_${mes}`]"
+                style="width: 80px; margin: 5px;"
+              />
+            </template>
+          </div>
         </template>
+
+        <div class="btn-central">
+          <button @click="validarYEnviar()" class="botones-opt">Optimizar</button>
+          <button @click="mostrarDatos()" class="botones-opt">Mostrar Datos</button>
+        </div>
+
+        <!-- Loader full screen -->
+        <div x-show="cargando" class="overlay-loader" style="display: none;">
+          <div class="spinner"></div>
+          <p style="margin-top: 10px; color: white;">Procesando optimización...</p>
+        </div>
+
+        <!-- Botón para ver resultados -->
+        <div x-show="mostrarBotonVerResultados" class="btn-central" style="margin-top: 20px;">
+          <button @click="vista = 'resultados'; mostrarBotonVerResultados = false">Ver Resultados</button>
+        </div>
+
+
+        <!-- Vista previa de datos -->
+        <div x-show="vistaPrevia" style="margin-top: 30px;">
+          <h3>Vista previa de datos:</h3>
+
+          <h4>Materias primas:</h4>
+          <ul>
+            <template x-for="m in vistaPrevia.materias" :key="m.nombre">
+              <li x-text="`${m.nombre} - Dureza: ${m.dureza} - Tipo: ${m.tipo}`"></li>
+            </template>
+          </ul>
+
+          <h4>Costos:</h4>
+          <ul>
+            <template x-for="(valor, clave) in vistaPrevia.costos" :key="clave">
+              <li x-text="`${clave}: $${valor}`"></li>
+            </template>
+          </ul>
+        </div>
       </div>
-    </template>
-    <div class="btn-central">
-        <button @click="validarYEnviar()">Optimizar</button>
-      </div>
+    </div>
   </div>
 
   <!-- VISTA RESULTADOS -->
-  <div x-show="vista === 'resultados'" x-transition>
-    <p class="subtitulo">Aquí aparecerán los resultados de la optimización.</p>
+  <div x-show="vista === 'resultados'"  x-transition>
+    <div class="backg">
+      <div class="contenedor-tabla">
+        <p class="subtitulo">Resultados de la Optimización</p>
+        <template x-for="mes in mesesDisponibles" :key="mes">
+          <div style="margin-bottom: 40px;">
+            <h3 x-text="'Mes ' + mes" style="margin-bottom: 10px;"></h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Materia Prima</th>
+                  <th>Compra</th>
+                  <th>Almacenamiento</th>
+                  <th>Uso</th>
+                </tr>
+              </thead>
+              <tbody>
+                <template x-for="(fila, index) in filtrarPorMes(mes)" :key="index">
+                  <tr>
+                    <td x-text="fila.material"></td>
+                    <td x-text="fila.compra"></td>
+                    <td x-text="fila.almacenamiento"></td>
+                    <td x-text="fila.uso"></td>
+                  </tr>
+                </template>
+              </tbody>
+            </table>
+          </div>
+        </template>
+
+        <p style="margin-top: 20px;">
+          <strong>Beneficio Total:</strong>
+          <span x-text="maxBeneficio || '-'"></span>
+        </p>
+
+        <div class="btn-central">
+          <button @click="vista = 'optimizador'; resetResultados()" class="boton-volver">
+            Volver al Optimizador
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
+
 
   <!-- VISTA AJUSTES -->
   <div x-show="vista === 'ajustes'" x-transition>
     <p class="subtitulo">Configuración general del optimizador.</p>
   </div>
-<script src="js/script.js" defer></script>
 
+  <!-- VISTA EJECUCIONES ANTERIORES -->
+  <div x-show="vista === 'ejecuciones'" x-transition x-init="cargarEjecuciones()" class="backg">
+    <div >
+      <br>
+      <div class="contenedor-tabla">
+        <h2 class="subtitulo" style="margin-bottom: 30px;">Ejecuciones Anteriores</h2>
+
+        <template x-if="ejecuciones.length === 0">
+          <p>No hay ejecuciones previas guardadas.</p>
+        </template>
+
+        <template x-if="ejecuciones.length > 0">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Fecha de Ejecución</th>
+                <th>Acción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <template x-for="ej in ejecuciones" :key="ej.id">
+                <tr>
+                  <td x-text="ej.id"></td>
+                  <td x-text="ej.fecha"></td>
+                  <td>
+                    <div class="btn-central">
+                      <button class="botones-opt" @click="verEjecucion(ej)">
+                        Ver Resultados
+                      </button>
+                      <button class="botones-opt" @click="verGraficos(ej)">Ver Graficos</button>
+                    </div>
+                    
+                  </td>
+                </tr>
+              </template>
+            </tbody>
+          </table>
+        </template>
+      </div>
+      <div class="btn-central" style="margin-top: 30px;">
+        <button class="boton-volver" @click="vista = 'inicio'">Volver al Inicio</button>
+      </div>
+    </div>
+  </div>
+
+<!-- VISTA GRAFICOS -->
+  <div x-show="vista === 'graficos'" x-transition class="backg">
+    <div class="contenedor-tabla">
+      <h2 class="subtitulo">Gráficos de la Ejecución</h2>
+
+      <div style="margin: 30px 0;">
+        <h4>Compra por Mes</h4>
+        <canvas id="graficoCompra" width="600" height="300" style="max-width: 100%; background: #fff; border: 1px solid #ccc; padding: 10px;"></canvas>
+      </div>
+
+      <div style="margin: 30px 0;">
+        <h4>Uso por Mes</h4>
+        <canvas id="graficoUso" width="600" height="300" style="max-width: 100%; background: #fff; border: 1px solid #ccc; padding: 10px;"></canvas>
+      </div>
+
+      <div style="margin: 30px 0;">
+        <h4>Almacenamiento por Mes</h4>
+        <canvas id="graficoAlmacen" width="600" height="300" style="max-width: 100%; background: #fff; border: 1px solid #ccc; padding: 10px;"></canvas>
+      </div>
+
+      <div class="btn-central" style="margin-top: 30px;">
+        <button class="boton-volver" @click="vista = 'ejecuciones'">Volver</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
