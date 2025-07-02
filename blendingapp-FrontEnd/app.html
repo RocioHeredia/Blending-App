@@ -28,25 +28,12 @@
             <button @click="vista = 'inicio'; abierto = false">Inicio</button>
             <button @click="vista = 'optimizador'; abierto = false" href=>Optimizador</button>
             <button @click="vista = 'resultados'; abierto = false">Resultados</button>
-            <button @click="vista = 'ajustes'; abierto = false">Ajustes</button>
             <button @click="vista = 'ejecuciones'; abierto = false">Ejecuciones Anteriores</button>
           </div>
         </div>
       </div>
     </nav>
-      <!-- <div x-data="{ abierto: false }" >
-        <button class="menu-toggle" @click="abierto = !abierto">
-          <img src="img/menu.png" alt="icono menú" />
-          <span>Menú</span>
-        </button>
-        <div x-show="abierto" class="menu">
-          <button @click="vista = 'inicio'; abierto = false">Inicio</button>
-          <button @click="vista = 'optimizador'; abierto = false">Optimizador</button>
-          <button @click="vista = 'resultados'; abierto = false">Resultados</button>
-          <button @click="vista = 'ajustes'; abierto = false">Ajustes</button>
-        </div>
-      </div> -->
-    <!-- <h1 class="h1">NutriMix Optimizer</h1> -->
+    
   </div>
 
   <!-- VISTA INICIO -->
@@ -54,6 +41,14 @@
     <div class="contenedor">
       <h1 class="h1">NutriMix Optimizer</h1>
       <p class="subtitulo">Optimiza tus materias primas. Maximiza tu rentabilidad.</p>
+      <p>Ganancia por unidad producida: 150</p>
+      <p>Costo de almacenamiento mensual por unidad: 4</p>
+      <p>Máxima cantidad de insumo vegetal por mes: 200</p>
+      <p>Máxima cantidad de insumo aceitoso por mes: 250</p>
+      <p>Cantidad inicial y final de stock por materia prima: 500</p>
+      <p>Capacidad máxima de almacenamiento: 1000</p>
+      <p>Cantidad de meses del horizonte de planificación: 6</p>
+
       <div class="btn-central">
         <button @click="vista = 'optimizador'">Ir a Optimizador</button>
       </div>
@@ -123,10 +118,12 @@
         </div>
 
         <!-- Loader full screen -->
-        <div x-show="cargando" class="overlay-loader" style="display: none;">
+        <div x-show="cargando" class="overlay-loader">
           <div class="spinner"></div>
-          <p style="margin-top: 10px; color: white;">Procesando optimización...</p>
+          <p style="margin-top: 10px; color: white;">Estado del Job: <span x-text="estadoJob"></span></p>
         </div>
+
+
 
         <!-- Botón para ver resultados -->
         <div x-show="mostrarBotonVerResultados" class="btn-central" style="margin-top: 20px;">
@@ -193,19 +190,14 @@
         </p>
 
         <div class="btn-central">
-          <button @click="vista = 'optimizador'; resetResultados()" class="boton-volver">
-            Volver al Optimizador
+          <button @click="vista = 'ejecuciones'" class="boton-volver">
+            Ir a Ejecuciones Anteriores
           </button>
         </div>
       </div>
     </div>
   </div>
 
-
-  <!-- VISTA AJUSTES -->
-  <div x-show="vista === 'ajustes'" x-transition>
-    <p class="subtitulo">Configuración general del optimizador.</p>
-  </div>
 
   <!-- VISTA EJECUCIONES ANTERIORES -->
   <div x-show="vista === 'ejecuciones'" x-transition x-init="cargarEjecuciones()" class="backg">
