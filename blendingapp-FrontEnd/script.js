@@ -5,6 +5,11 @@ document.addEventListener('alpine:init', () => {
     cargando: false,
     resultadoListo: false,
     mostrarBotonVerResultados:false,
+    mostrarBotonVerGraficos: false,
+
+    estadoJob: '',
+    intervaloEstado: null,
+
     materias: [
       { nombre: '', dureza: '', tipo: 'Vegetal' }
     ],
@@ -33,6 +38,26 @@ document.addEventListener('alpine:init', () => {
 
     eliminarFila(index) {
       this.materias.splice(index, 1);
+    },
+
+    iniciarSeguimientoEstado() {
+      this.estadoJob = 'Iniciando...';
+
+      this.intervaloEstado = setInterval(() => {
+        fetch('http://127.0.0.1:3000/optimize/status')
+          .then(res => res.json())
+          .then(data => {
+            this.estadoJob = data.estado;
+
+            // Si finalizó, cancelamos el seguimiento
+            if (data.estado === 'Completed' || data.estado === 'Failed') {
+              clearInterval(this.intervaloEstado);
+            }
+          })
+          .catch(err => {
+            console.error('Error consultando estado del job:', err);
+          });
+      }, 3000); // cada 3 segundos
     },
 
     validarYEnviar() {
@@ -92,7 +117,9 @@ document.addEventListener('alpine:init', () => {
       this.cargando = true;
       this.resultadoListo = false;
 
-      fetch('http://localhost:3000/optimize', {
+      this.iniciarSeguimientoEstado();
+      
+      fetch('http://127.0.0.1:3000/optimize', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -103,7 +130,13 @@ document.addEventListener('alpine:init', () => {
           Parameters
         })
       })
-        .then(response => response.json())
+        .then(async response => {
+          if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(`Error ${response.status}: ${errorText}`);
+          }
+          return response.json();
+        })
         .then(data => {
           console.log('Respuesta del backend:', data);
           this.maxBeneficio = parseFloat(data.maxBeneficio[0].maxBeneficio);
@@ -114,13 +147,14 @@ document.addEventListener('alpine:init', () => {
           this.cargando = false;
           this.resultadoListo = true;
           this.mostrarBotonVerResultados = true;
-
+          this.mostrarBotonVerGraficos = true;
         })
         .catch(error => {
-          console.error('Error al enviar datos:', error);
-          alert('Hubo un error al comunicarse con el servidor.');
+          console.error('❌ Error al enviar datos:', error);
+          alert('Hubo un error al comunicarse con el servidor: ' + error.message);
           this.cargando = false;
         });
+
     },
 
     mostrarDatos() {
@@ -166,13 +200,13 @@ document.addEventListener('alpine:init', () => {
       });
     },
 
-    resetResultados() {
+    /*resetResultados() {
       this.resultadoListo = false;
       this.maxBeneficio = 0;
       this.buySolution = [];
       this.useSolution = [];
       this.storeSolution = [];
-    },
+    },*/
 
     ejecuciones: [],
 
@@ -185,7 +219,7 @@ document.addEventListener('alpine:init', () => {
     },
 
     cargarEjecuciones() {
-      fetch('http://localhost:3000/optimize/executions')
+      fetch('http://127.0.0.1:3000/optimize/executions')
         .then(res => res.json())
         .then(data => {
           this.ejecuciones = data;
@@ -276,6 +310,7 @@ document.addEventListener('alpine:init', () => {
       const b = Math.floor(Math.random() * 255);
       return `rgba(${r}, ${g}, ${b}, 0.6)`;
     }
+
 
   }));
 });
