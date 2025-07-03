@@ -1,0 +1,10 @@
+/*********************************************
+ * OPL 22.1.1.0 Data
+ * Author: Usuario
+ * Creation Date: 8 abr. 2025 at 23:19:52
+ *********************************************/
+Productos = {"A", "B"};
+Componentes = {"proteinas", "grasas", "azucares"};
+demanda = [[0.3,0.01,0.1],[0.05,0.07,0.1]];
+beneficio = [0.6,0.2];
+stock = [25,6,30];
