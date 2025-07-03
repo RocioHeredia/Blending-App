@@ -1,0 +1,1460 @@
+[
+  {
+    "id": 1,
+    "fecha": "1/7/2025, 09:01:16",
+    "maxBeneficio": 119100,
+    "buySolution": [
+      {
+        "material": "Tomate",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Zapallo",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Tomate",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Zapallo",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "month": "2.0",
+        "value": "750.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Tomate",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Zapallo",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Tomate",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Zapallo",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Tomate",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Zapallo",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Tomate",
+        "month": "6.0",
+        "value": "659.3"
+      },
+      {
+        "material": "Zapallo",
+        "month": "6.0",
+        "value": "540.7"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "month": "6.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "month": "6.0",
+        "value": "750.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "month": "6.0",
+        "value": "0.0"
+      }
+    ],
+    "useSolution": [
+      {
+        "material": "Tomate",
+        "month": "1.0",
+        "value": "22.22"
+      },
+      {
+        "material": "Zapallo",
+        "month": "1.0",
+        "value": "177.8"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "month": "1.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Tomate",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Zapallo",
+        "month": "2.0",
+        "value": "200.0"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "month": "2.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Tomate",
+        "month": "3.0",
+        "value": "159.3"
+      },
+      {
+        "material": "Zapallo",
+        "month": "3.0",
+        "value": "40.74"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "month": "3.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Tomate",
+        "month": "4.0",
+        "value": "159.3"
+      },
+      {
+        "material": "Zapallo",
+        "month": "4.0",
+        "value": "40.74"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "month": "4.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Tomate",
+        "month": "5.0",
+        "value": "159.3"
+      },
+      {
+        "material": "Zapallo",
+        "month": "5.0",
+        "value": "40.74"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "month": "5.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Tomate",
+        "month": "6.0",
+        "value": "159.3"
+      },
+      {
+        "material": "Zapallo",
+        "month": "6.0",
+        "value": "40.74"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "month": "6.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "month": "6.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "month": "6.0",
+        "value": "0.0"
+      }
+    ],
+    "storeSolution": [
+      {
+        "material": "Tomate",
+        "period": "0.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Zapallo",
+        "period": "0.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "period": "0.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "period": "0.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "period": "0.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Tomate",
+        "period": "1.0",
+        "value": "477.8"
+      },
+      {
+        "material": "Zapallo",
+        "period": "1.0",
+        "value": "322.2"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "period": "1.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "period": "1.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "period": "1.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Tomate",
+        "period": "2.0",
+        "value": "477.8"
+      },
+      {
+        "material": "Zapallo",
+        "period": "2.0",
+        "value": "122.2"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "period": "2.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "period": "2.0",
+        "value": "750.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "period": "2.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Tomate",
+        "period": "3.0",
+        "value": "318.5"
+      },
+      {
+        "material": "Zapallo",
+        "period": "3.0",
+        "value": "81.48"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "period": "3.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "period": "3.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "period": "3.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Tomate",
+        "period": "4.0",
+        "value": "159.3"
+      },
+      {
+        "material": "Zapallo",
+        "period": "4.0",
+        "value": "40.74"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "period": "4.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "period": "4.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "period": "4.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Tomate",
+        "period": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Zapallo",
+        "period": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "period": "5.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "period": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "period": "5.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Tomate",
+        "period": "6.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Zapallo",
+        "period": "6.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Aceite de Oliva",
+        "period": "6.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Aceite de Girasol",
+        "period": "6.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Aceite de Coco",
+        "period": "6.0",
+        "value": "500.0"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "fecha": "2/7/2025, 03:42:22",
+    "maxBeneficio": 107800,
+    "buySolution": [
+      {
+        "material": "Veg1",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg2",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil1",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg2",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil1",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "2.0",
+        "value": "750.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg2",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil1",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg2",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil1",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg2",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil1",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "6.0",
+        "value": "659.3"
+      },
+      {
+        "material": "Veg2",
+        "month": "6.0",
+        "value": "540.7"
+      },
+      {
+        "material": "Oil1",
+        "month": "6.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "6.0",
+        "value": "750.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "6.0",
+        "value": "0.0"
+      }
+    ],
+    "useSolution": [
+      {
+        "material": "Veg1",
+        "month": "1.0",
+        "value": "22.22"
+      },
+      {
+        "material": "Veg2",
+        "month": "1.0",
+        "value": "177.8"
+      },
+      {
+        "material": "Oil1",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "1.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg2",
+        "month": "2.0",
+        "value": "200.0"
+      },
+      {
+        "material": "Oil1",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "2.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "3.0",
+        "value": "159.3"
+      },
+      {
+        "material": "Veg2",
+        "month": "3.0",
+        "value": "40.74"
+      },
+      {
+        "material": "Oil1",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "3.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "4.0",
+        "value": "159.3"
+      },
+      {
+        "material": "Veg2",
+        "month": "4.0",
+        "value": "40.74"
+      },
+      {
+        "material": "Oil1",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "4.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "5.0",
+        "value": "159.3"
+      },
+      {
+        "material": "Veg2",
+        "month": "5.0",
+        "value": "40.74"
+      },
+      {
+        "material": "Oil1",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "5.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "6.0",
+        "value": "159.3"
+      },
+      {
+        "material": "Veg2",
+        "month": "6.0",
+        "value": "40.74"
+      },
+      {
+        "material": "Oil1",
+        "month": "6.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "6.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "6.0",
+        "value": "0.0"
+      }
+    ],
+    "storeSolution": [
+      {
+        "material": "Veg1",
+        "period": "0.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Veg2",
+        "period": "0.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil1",
+        "period": "0.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil2",
+        "period": "0.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil3",
+        "period": "0.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Veg1",
+        "period": "1.0",
+        "value": "477.8"
+      },
+      {
+        "material": "Veg2",
+        "period": "1.0",
+        "value": "322.2"
+      },
+      {
+        "material": "Oil1",
+        "period": "1.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil2",
+        "period": "1.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Oil3",
+        "period": "1.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Veg1",
+        "period": "2.0",
+        "value": "477.8"
+      },
+      {
+        "material": "Veg2",
+        "period": "2.0",
+        "value": "122.2"
+      },
+      {
+        "material": "Oil1",
+        "period": "2.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil2",
+        "period": "2.0",
+        "value": "750.0"
+      },
+      {
+        "material": "Oil3",
+        "period": "2.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Veg1",
+        "period": "3.0",
+        "value": "318.5"
+      },
+      {
+        "material": "Veg2",
+        "period": "3.0",
+        "value": "81.48"
+      },
+      {
+        "material": "Oil1",
+        "period": "3.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil2",
+        "period": "3.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil3",
+        "period": "3.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Veg1",
+        "period": "4.0",
+        "value": "159.3"
+      },
+      {
+        "material": "Veg2",
+        "period": "4.0",
+        "value": "40.74"
+      },
+      {
+        "material": "Oil1",
+        "period": "4.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil2",
+        "period": "4.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Oil3",
+        "period": "4.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Veg1",
+        "period": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg2",
+        "period": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil1",
+        "period": "5.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil2",
+        "period": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil3",
+        "period": "5.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Veg1",
+        "period": "6.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Veg2",
+        "period": "6.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil1",
+        "period": "6.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil2",
+        "period": "6.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil3",
+        "period": "6.0",
+        "value": "500.0"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "fecha": "2/7/2025, 05:30:19",
+    "maxBeneficio": 107800,
+    "buySolution": [
+      {
+        "material": "Veg1",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg2",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil1",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg2",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil1",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "2.0",
+        "value": "750.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg2",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil1",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg2",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil1",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg2",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil1",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "6.0",
+        "value": "659.3"
+      },
+      {
+        "material": "Veg2",
+        "month": "6.0",
+        "value": "540.7"
+      },
+      {
+        "material": "Oil1",
+        "month": "6.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "6.0",
+        "value": "750.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "6.0",
+        "value": "0.0"
+      }
+    ],
+    "useSolution": [
+      {
+        "material": "Veg1",
+        "month": "1.0",
+        "value": "22.22"
+      },
+      {
+        "material": "Veg2",
+        "month": "1.0",
+        "value": "177.8"
+      },
+      {
+        "material": "Oil1",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "1.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "1.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg2",
+        "month": "2.0",
+        "value": "200.0"
+      },
+      {
+        "material": "Oil1",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "2.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "2.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "3.0",
+        "value": "159.3"
+      },
+      {
+        "material": "Veg2",
+        "month": "3.0",
+        "value": "40.74"
+      },
+      {
+        "material": "Oil1",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "3.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "3.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "4.0",
+        "value": "159.3"
+      },
+      {
+        "material": "Veg2",
+        "month": "4.0",
+        "value": "40.74"
+      },
+      {
+        "material": "Oil1",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "4.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "4.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "5.0",
+        "value": "159.3"
+      },
+      {
+        "material": "Veg2",
+        "month": "5.0",
+        "value": "40.74"
+      },
+      {
+        "material": "Oil1",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "5.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg1",
+        "month": "6.0",
+        "value": "159.3"
+      },
+      {
+        "material": "Veg2",
+        "month": "6.0",
+        "value": "40.74"
+      },
+      {
+        "material": "Oil1",
+        "month": "6.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil2",
+        "month": "6.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Oil3",
+        "month": "6.0",
+        "value": "0.0"
+      }
+    ],
+    "storeSolution": [
+      {
+        "material": "Veg1",
+        "period": "0.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Veg2",
+        "period": "0.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil1",
+        "period": "0.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil2",
+        "period": "0.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil3",
+        "period": "0.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Veg1",
+        "period": "1.0",
+        "value": "477.8"
+      },
+      {
+        "material": "Veg2",
+        "period": "1.0",
+        "value": "322.2"
+      },
+      {
+        "material": "Oil1",
+        "period": "1.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil2",
+        "period": "1.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Oil3",
+        "period": "1.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Veg1",
+        "period": "2.0",
+        "value": "477.8"
+      },
+      {
+        "material": "Veg2",
+        "period": "2.0",
+        "value": "122.2"
+      },
+      {
+        "material": "Oil1",
+        "period": "2.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil2",
+        "period": "2.0",
+        "value": "750.0"
+      },
+      {
+        "material": "Oil3",
+        "period": "2.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Veg1",
+        "period": "3.0",
+        "value": "318.5"
+      },
+      {
+        "material": "Veg2",
+        "period": "3.0",
+        "value": "81.48"
+      },
+      {
+        "material": "Oil1",
+        "period": "3.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil2",
+        "period": "3.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil3",
+        "period": "3.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Veg1",
+        "period": "4.0",
+        "value": "159.3"
+      },
+      {
+        "material": "Veg2",
+        "period": "4.0",
+        "value": "40.74"
+      },
+      {
+        "material": "Oil1",
+        "period": "4.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil2",
+        "period": "4.0",
+        "value": "250.0"
+      },
+      {
+        "material": "Oil3",
+        "period": "4.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Veg1",
+        "period": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Veg2",
+        "period": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil1",
+        "period": "5.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil2",
+        "period": "5.0",
+        "value": "0.0"
+      },
+      {
+        "material": "Oil3",
+        "period": "5.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Veg1",
+        "period": "6.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Veg2",
+        "period": "6.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil1",
+        "period": "6.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil2",
+        "period": "6.0",
+        "value": "500.0"
+      },
+      {
+        "material": "Oil3",
+        "period": "6.0",
+        "value": "500.0"
+      }
+    ]
+  }
+]
